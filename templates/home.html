@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+    <h1>Obst-Shop</h1>
+    <table>
+    <!-- eine Schleife mit Jinja, id ist die Nummer und Produkt enthält die Produktdaten -->
+    {% for id, produkt in produkte.items() %}
+    
+        <!-- TODO: Hier eine Tabellen-Zeile einfügen (tr) -->
+        
+        <!-- TODO: In die Zeile zwei Spalten einfügen (td):
+            Name des Produkts, verlinkt auf die Detailseite,
+            Preis des Produkts
+         -->
+    
+    {% endfor %}
+    </table>
+
+</body>
+</html>
