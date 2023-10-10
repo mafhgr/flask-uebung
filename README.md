@@ -17,3 +17,7 @@ Implementieren Sie zwei Funktionen in der Datei `shop.py` - Sie finden dort Anwe
 - `details(id)` zeigt das Template `details.html` an. Dieses Template soll die Details eines Produkts mit der Nummer `id` anzeigen. Die Details sollen aus dem Dictionary `produkte` kommen, das in der Datei `shop.py` definiert ist. Die Details sollen den Namen, den Preis und ein Bild des Produkts enthalten. Falls die Nummer `id` nicht existiert, soll eine Fehlermeldung angezeigt werden und der Status Code 404 zurückgegeben werden.
 
 Darüber hinaus müssen Sie die Templates `home.html` und `details.html` ergänzen. Sie finden dort Anweisungen in den Kommentaren (mit TODO markiert).
+
+# Lösung
+
+Sie finden die Lösung im Unterordner `lösung`.

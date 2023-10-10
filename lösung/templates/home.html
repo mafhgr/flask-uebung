@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Obst-Shop</h1>
+    <table>
+    {% for id, produkt in produkte.items() %}
+    <tr>
+        <td><a href="/details/{{ id }}">{{ produkt.name }} </a></td>
+        <td>{{ produkt.preis }}</td>
+    </tr>    
+    {% endfor %}
+    </table>
+    
+    <style>
+        .img {
+            width: 200px;
+        }
+    </style>
+</body>
+</html>
