@@ -25,13 +25,16 @@ produkte = {
 @app.route('/')
 def home():
     # TODO: produkte auf der Homepage anzeigen, mit Link auf die Detailseite
-    
+    return render_template('home.html', produkte=produkte)
     pass # kann gelöscht werden, wenn die Funktion fertig ist
 
-@app.route('... TODO hier eine geeignete Route eintragen ...')
-def details(id):
+@app.route('/detail/<id>')
+def detail(id):
     # TODO: Produkt mit der ID aus der URL auslesen und anzeigen (Template details.html)
-    
+    produkt = produkte[int(id)]
+    return render_template('details.html', produkt=produkt)
+
+    link = url_for('detail')
     # TODO: falls eine ungültige id übergeben wird:
     # return "Produkt nicht gefunden", 404
 

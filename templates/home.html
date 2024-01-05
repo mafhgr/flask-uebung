@@ -10,7 +10,25 @@
     <table>
     <!-- eine Schleife mit Jinja, id ist die Nummer und Produkt enthält die Produktdaten -->
     {% for id, produkt in produkte.items() %}
-    
+        <tr>
+            <th>Produkt-Nr</th>
+            <th>Name</th>
+            <th>Preis</th>
+
+
+        </tr>
+
+        <tr>
+            <td>{{ id }}</td>
+            <td>
+                <a href="/detail/{{ id }}">
+                    {{ produkt.name }}
+                </a>
+            </td>
+            <td>{{ produkt.preis }}</td>
+
+        </tr>
+
         <!-- TODO: Hier eine Tabellen-Zeile einfügen (tr) -->
         
         <!-- TODO: In die Zeile zwei Spalten einfügen (td):
